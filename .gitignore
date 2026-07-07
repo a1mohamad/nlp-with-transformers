@@ -1,39 +1,186 @@
 # ============================================================
-# Hugging Face / Transformers generated artifacts
+# Python
 # ============================================================
 
-# Training checkpoints created by Trainer(output_dir=...)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+ai-env/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Jupyter / notebooks
+# ============================================================
+
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Do NOT ignore notebook outputs globally.
+# For this educational repo, notebook outputs are meaningful.
+
+# ============================================================
+# IDE / editors
+# ============================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ============================================================
+# OS files
+# ============================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Logs
+# ============================================================
+
+*.log
+logs/
+runs/
+
+# ============================================================
+# Hugging Face / Transformers cache
+# ============================================================
+
+.cache/
+hf_cache/
+huggingface/
+.huggingface/
+
+# If you manually set HF_HOME or TRANSFORMERS_CACHE inside the repo
+transformers_cache/
+datasets_cache/
+
+# ============================================================
+# Hugging Face Trainer outputs
+# ============================================================
+
+# Checkpoints created during fine-tuning
 **/checkpoint-*/
+checkpoint-*/
 
-# Experiment logs
-**/runs/
-**/logs/
-**/wandb/
-**/mlruns/
-
-# Trainer resume-state files
+# Trainer state / resume files
 **/optimizer.pt
 **/scheduler.pt
 **/rng_state*.pth
 **/trainer_state.json
 **/training_args.bin
 
-# Model weight files
-**/model.safetensors
-**/model-*.safetensors
-**/pytorch_model*.bin
-**/tf_model*.h5
-**/flax_model*.msgpack
-**/*.ckpt
-**/*.onnx
+# Experiment trackers
+wandb/
+**/wandb/
+mlruns/
+**/mlruns/
 
-# Optional: local model/output folders
+# TensorBoard logs
+events.out.tfevents*
+**/events.out.tfevents*
+
+# ============================================================
+# Model weights / exported models
+# ============================================================
+
+# PyTorch / Transformers
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# TensorFlow / Keras
+*.h5
+*.keras
+saved_model/
+**/saved_model/
+
+# ONNX
+*.onnx
+
+# Flax / JAX
+*.msgpack
+
+# Checkpoints
+*.ckpt
+*.ckpt.*
+
+# ============================================================
+# Data files
+# ============================================================
+
+# Keep raw datasets out of Git unless they are tiny examples.
+data/raw/
+data/external/
+data/interim/
+data/processed/
+
+# Common dataset formats
+*.csv
+*.tsv
+*.jsonl
+*.parquet
+*.arrow
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+
+# But allow small example files if you create them
+!data/examples/
+!data/examples/**
+
+# ============================================================
+# Project artifacts
+# ============================================================
+
 artifacts/
 outputs/
 models/
 checkpoints/
+experiments/
 
-# Hugging Face local cache, if you create it inside the repo
-.cache/
-hf_cache/
-huggingface/
+# ============================================================
+# NLP with Transformers chapter-specific outputs
+# ============================================================
+
+# Chapter 2 fine-tuned emotion model output
+Chapter2-Text Classification/distilbert-base-uncased-finetuned-emotion/*
+!Chapter2-Text Classification/distilbert-base-uncased-finetuned-emotion/README.md
+
+# More chapter output folders can follow the same style:
+# Chapter*/artifacts/
+# Chapter*/outputs/
+# Chapter*/models/
+# Chapter*/checkpoints/
+
+# ============================================================
+# Keep important repo files
+# ============================================================
+
+!README.md
+!requirements.txt
+!.gitignore
