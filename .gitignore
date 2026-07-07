@@ -1,25 +1,39 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.venv/
-venv/
-env/
+# ============================================================
+# Hugging Face / Transformers generated artifacts
+# ============================================================
 
-# Jupyter
-.ipynb_checkpoints/
+# Training checkpoints created by Trainer(output_dir=...)
+**/checkpoint-*/
 
-# OS / editor
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
+# Experiment logs
+**/runs/
+**/logs/
+**/wandb/
+**/mlruns/
 
-# Hugging Face / model caches
-.cache/
-models/
+# Trainer resume-state files
+**/optimizer.pt
+**/scheduler.pt
+**/rng_state*.pth
+**/trainer_state.json
+**/training_args.bin
+
+# Model weight files
+**/model.safetensors
+**/model-*.safetensors
+**/pytorch_model*.bin
+**/tf_model*.h5
+**/flax_model*.msgpack
+**/*.ckpt
+**/*.onnx
+
+# Optional: local model/output folders
 artifacts/
+outputs/
+models/
+checkpoints/
 
-# Logs
-*.log
+# Hugging Face local cache, if you create it inside the repo
+.cache/
+hf_cache/
+huggingface/
