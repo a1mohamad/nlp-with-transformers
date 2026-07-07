@@ -167,8 +167,8 @@ experiments/
 # NLP with Transformers chapter-specific outputs
 # ============================================================
 
-# Chapter 2 fine-tuned emotion model output
-Chapter2-Text Classification/distilbert-base-uncased-finetuned-emotion/*
+# Chapter 2 fine-tuned DistilBERT emotion model output
+/Chapter2-Text Classification/distilbert-base-uncased-finetuned-emotion/
 
 # More chapter output folders can follow the same style:
 # Chapter*/artifacts/
