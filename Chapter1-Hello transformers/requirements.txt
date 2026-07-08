@@ -1,0 +1,16 @@
+# Core notebook stack
+jupyterlab>=4.0
+ipykernel>=6.0
+ipywidgets>=8.0
+
+# Data display
+pandas>=2.0
+
+# Deep learning backend
+torch>=2.1
+
+# Hugging Face ecosystem
+transformers>=4.44
+sentencepiece>=0.2
+sacremoses>=0.1
+accelerate>=0.30
