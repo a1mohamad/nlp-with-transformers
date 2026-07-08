@@ -1,0 +1,17 @@
+# Chapter 2 — Text Classification dependencies
+# Install PyTorch separately if you need a CUDA-specific build:
+# https://pytorch.org/get-started/locally/
+
+transformers
+datasets
+huggingface_hub
+accelerate
+evaluate
+torch
+scikit-learn
+pandas
+numpy
+matplotlib
+umap-learn
+jupyter
+notebook
