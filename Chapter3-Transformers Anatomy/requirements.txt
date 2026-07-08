@@ -1,0 +1,16 @@
+# Chapter 3 — Transformer Anatomy requirements
+#
+# These packages support the annotated attention and transformer encoder notebooks.
+
+torch>=2.0.0
+transformers>=4.30.0
+safetensors>=0.4.0
+
+# Jupyter environment
+jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
+ipywidgets>=8.0.0
+
+# Optional attention visualization support
+bertviz>=1.4.0
