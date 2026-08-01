@@ -162,6 +162,7 @@ outputs/
 models/
 checkpoints/
 experiments/
+bertviz_bert/
 
 # ============================================================
 # NLP with Transformers chapter-specific outputs
