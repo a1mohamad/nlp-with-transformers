@@ -15,6 +15,9 @@ dist/
 .eggs/
 pip-wheel-metadata/
 
+# MLflow
+*.db
+
 # Virtual environments
 .venv/
 venv/
