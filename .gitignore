@@ -173,6 +173,8 @@ bertviz_bert/
 
 # Chapter 2 fine-tuned DistilBERT emotion model output
 /Chapter2-Text Classification/distilbert-base-uncased-finetuned-emotion/
+/Chapter4-Multilingual Named Entity Recognition/xlm-roberta-base-finetuned-panx-de/
+
 
 # More chapter output folders can follow the same style:
 # Chapter*/artifacts/
